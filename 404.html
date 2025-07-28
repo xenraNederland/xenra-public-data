@@ -5,34 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xenra Nederland - Nalatenschap Regelen</title>
     
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Nalatenschap regelen? Xenra Nederland regelt vooraf alles zodat uw nabestaanden zorgeloos afscheid nemen. Vraag gratis advies aan!" />
-    <meta name="keywords" content="nalatenschap regelen nederland, nalatenschapbeheer" />
-    
-    <!-- Redirect Script voor SPA -->
+    <!-- Direct redirect to main page -->
     <script>
-      // GitHub Pages SPA fallback - redirect to main site with path info
-      (function(l) {
-        if (l.search) {
-          var path = l.search.slice(1).split('&')[0];
-          if (path) {
-            window.history.replaceState(null, null, l.pathname.slice(0, -1) + path + l.hash);
-          }
-        }
-      }(window.location));
-      
-      // Immediate redirect to main index.html for all 404s
-      setTimeout(function() {
-        window.location.href = '/xenra-public-data/';
-      }, 100);
+      window.location.replace('/xenra-public-data/');
     </script>
+    
+    <!-- Fallback meta refresh -->
+    <meta http-equiv="refresh" content="0; url=/xenra-public-data/">
 </head>
 <body>
-    <div style="display: flex; justify-content: center; align-items: center; height: 100vh; font-family: Arial;">
-        <div style="text-align: center;">
-            <h1>Redirecting...</h1>
-            <p>U wordt doorgestuurd naar Xenra Nederland</p>
-        </div>
-    </div>
+    <p>U wordt doorgestuurd naar Xenra Nederland...</p>
+    <p><a href="/xenra-public-data/">Klik hier als u niet automatisch wordt doorgestuurd</a></p>
 </body>
 </html>
