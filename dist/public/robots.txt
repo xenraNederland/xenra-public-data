@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+
+# Important pages for SEO
+Allow: /services
+Allow: /pricing
+Allow: /calculator
+Allow: /faq
+Allow: /contact
+Allow: /registration
+
+# Block admin areas
+Disallow: /cms
+Disallow: /customer-login
+Disallow: /customer-dashboard
+
+# Sitemap location
+Sitemap: https://xenra.nl/sitemap.xml
+
+# Crawl delay (optional - helps prevent overloading)
+Crawl-delay: 1
